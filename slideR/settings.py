@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'rest_framework.authtoken',
 ]
-SITE_ID = 5
+SITE_ID = 6
 
 CORS_ORIGIN_ALLOW_ALL = True
 
