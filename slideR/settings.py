@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-67jlo==j#c+e%-h_p@p-lh9#v6ik3t&^gwamwpy=+ai8amq-0@
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost:8000','slidertest321.herokuapp.com']
+ALLOWED_HOSTS = ['localhost:8000','http://slidertest321.herokuapp.com']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
