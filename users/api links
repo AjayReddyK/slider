@@ -1,0 +1,6 @@
+/users/ -create user
+/users/activation/-activate user
+/jwt/create/ - get jason web tokens
+/jwt/refresh/ - get new access token
+/users/reset_password/ -request new password
+/users/reset_password_confirm/ - reset password

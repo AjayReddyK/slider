@@ -1,0 +1,20 @@
+body{
+    background: url('../assets/img/BACKGROUND.png');
+    background-size: cover;
+}
+.white{
+    color: #fff;
+    margin: 2rem;
+    padding: 2rem;
+}
+.box{
+    padding: 2rem;
+}
+.radius{
+    border-radius: 10px;
+    border:1px solid black;
+}
+img{
+    width: 100%;
+    margin-top:15px;
+}
