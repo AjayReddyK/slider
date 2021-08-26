@@ -1,0 +1,56 @@
+.show>.dropdown-menu {
+    display: block;
+    position: absolute;
+  }
+
+.title{
+    /* color: black; */
+    font-family: 'Bebas Neue', cursive;
+    font-size: xx-large;
+}
+
+
+.answer {
+  font-size: x-large;
+  padding: 3px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+.label {
+  font-family: 'Bebas Neue', cursive;
+  font-size: x-large;
+  padding: 2px;
+  margin-right: 9px;
+}
+
+.profilecontainer{
+  background: cadetblue;
+padding: 30px;
+/* margin-top: -60px; */
+width: 150%;
+border-radius: 1rem;
+}
+
+.card {
+  background: #fff0dc;
+  padding: 2px 0px 2px 15px;
+  margin: 0px 0px 10px;
+  border-radius: 0.5rem;
+}
+
+.tt{
+  font-family: "Bebas Neue",cursive;
+font-size: xx-large;
+color: navy;
+letter-spacing: 1px;
+}
+
+.content{
+  margin-top: 2rem;
+}
+
+.contain{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}

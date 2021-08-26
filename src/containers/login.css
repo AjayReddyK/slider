@@ -1,0 +1,70 @@
+
+#password::placeholder{
+    color: #fff;
+    opacity: 1;
+    font-size: 1.2rem;
+}
+.inputcolor{
+    background-color:#9acdd2;
+    border-radius: 0.5rem;
+}
+#email::placeholder{
+    color: #fff;
+    opacity: 1;
+    font-size: 1.2rem;
+}
+#first_name::placeholder{
+    color: #fff;
+    opacity: 1;
+    font-size: 1.2rem;
+}
+#last_name::placeholder{
+    color: #fff;
+    opacity: 1;
+    font-size: 1.2rem;
+}
+#phone::placeholder{
+    color: #fff;
+    opacity: 1;
+    font-size: 1.2rem;
+}
+#country::placeholder{
+    color: #fff;
+    opacity: 1;
+    font-size: 1.2rem;
+}
+#category::placeholder{
+    color: #fff;
+    opacity: 1;
+    font-size: 1.2rem;
+}
+.passvalidation{
+    background-color: #9acdc9;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 3px 0px 0px 10px;
+    border-radius:5px;
+}
+
+.size{
+    font-size: 21px;
+}
+.icon{
+    font-size: large;
+}
+.passvalidation p{
+    opacity: 0.5;
+}
+.passvalidation p span{
+    margin-left: 8px;
+}
+.checkk{
+    opacity: 1;
+}
+.clearr{
+    opacity: 0;
+}
+#show_hide{
+    cursor: pointer;
+}
