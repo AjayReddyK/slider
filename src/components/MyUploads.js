@@ -47,7 +47,7 @@ const MyUploads = () => {
     // const handleDownload = () => {
     //     const downloadData = new FormData();
     //     downloadData.append("file_name","/documents/2.png");
-    //     const url = "http://localhost:8000/download/";
+    //     const url = "http://slidertest321.com/download/";
 
     //     axios.post(url,downloadData,{
     //         responseType:'blob',
