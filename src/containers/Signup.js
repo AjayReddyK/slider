@@ -101,7 +101,7 @@ const Signup = ({signup, isAuthenticated}) => {
 
     // const continueWithGoogle = async() => {
     //     try{
-    //         const res = await axios.get(`${process.env.REACT_APP_API_URL}/auth/o/google-oauth2/?redirect_uri=http://localhost:8000`)
+    //         const res = await axios.get(`${process.env.REACT_APP_API_URL}/auth/o/google-oauth2/?redirect_uri=http://slidertest321.com`)
     //         window.location.replace(res.data.authorization_url);
     //     } catch(err){
 
