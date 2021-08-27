@@ -7,7 +7,7 @@ const Test = ({isAuthenticated}) => {
 
         useEffect(() => {
             const fetchProfile = async () => {
-              const res = await axios.get('http://slidertest321.com/api/userdata/', { headers: {'Authorization': `JWT ${localStorage.getItem('access')}`} });
+              const res = await axios.get('http://slidertest321.herokuapp.com/api/userdata/', { headers: {'Authorization': `JWT ${localStorage.getItem('access')}`} });
               setProfile(res.data);
               console.log("profile api data",res.data);
               console.log("profile const data",profile);
@@ -18,7 +18,7 @@ const Test = ({isAuthenticated}) => {
 
         useEffect(() => {
             const fetchUploads = async () => {
-              const res = await axios.get('http://slidertest321.com/api/uploadedfiles/', { headers: {'Authorization': `JWT ${localStorage.getItem('access')}`} });
+              const res = await axios.get('http://slidertest321.herokuapp.com/api/uploadedfiles/', { headers: {'Authorization': `JWT ${localStorage.getItem('access')}`} });
               setUploads(res.data);
               console.log("upload api data",res.data);
               console.log("uploads const data",uploads);
