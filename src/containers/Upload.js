@@ -166,7 +166,7 @@ const Upload = () => {
 		uploadData.append('hashtags',selectedCategory.join(","));
 		uploadData.append('name',filename);
 
-		const url = 'http://slidertest321.heroku.com/api/upload/';
+		const url = 'http://slidertest321.herokuapp.com/api/upload/';
 		
 		axios.post(url, uploadData, {
 			headers: {
