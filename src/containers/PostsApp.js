@@ -26,7 +26,7 @@ const PostsApp = () => {
             fileData.append('order_by',"uploaded_at");
             setLoading(true);
 
-            const url = 'http://slidertest321.com/api/files/';
+            const url = 'http://slidertest321.herokuapp.com/api/files/';
 
             axios.post(url, fileData, {
                 headers: {
@@ -68,7 +68,7 @@ const PostsApp = () => {
     // fetching departments
     useEffect(() => {
         const fetchDepartments = async () => {
-          const res = await axios.get('http://slidertest321.com/api/department/');
+          const res = await axios.get('http://slidertest321.herokuapp.com/api/department/');
           setDepartments(res.data);
 
         //   console.log("departments:",...departments);
@@ -80,7 +80,7 @@ const PostsApp = () => {
     // fetching hashtags
     useEffect(() => {
         const fetchHashtags = async () => {
-          const res = await axios.get('http://slidertest321.com/api/category/');
+          const res = await axios.get('http://slidertest321.herokuapp.com/api/category/');
           setHashtags(res.data);
         };
     
@@ -98,7 +98,7 @@ const PostsApp = () => {
         depData.append("department",e);
         setLoading(true);
 
-        const url = 'http://slidertest321.com/api/getdepartment/';
+        const url = 'http://slidertest321.herokuapp.com/api/getdepartment/';
         console.log("department name = ", e);
         console.log("hitting api");
         axios.post(url, depData,{
@@ -123,7 +123,7 @@ const PostsApp = () => {
         hashtagData.append("category",e);
         setLoading(true);
 
-        const url = 'http://slidertest321.com/api/getcategory/';
+        const url = 'http://slidertest321.herokuapp.com/api/getcategory/';
         console.log("category name = ", e);
         console.log("hitting category api");
         axios.post(url, hashtagData,{
