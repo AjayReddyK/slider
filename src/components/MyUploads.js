@@ -33,7 +33,7 @@ const MyUploads = () => {
     useEffect(() => {
         const fetchUploads = async () => {
 		setLoading(true);
-        const res = await axios.get('http://slidertest321.herokuapp.com/api/uploadedfiles/', { headers: {'Authorization': `JWT ${localStorage.getItem('access')}`} });
+        const res = await axios.get('http://localhost:8000/api/uploadedfiles/', { headers: {'Authorization': `JWT ${localStorage.getItem('access')}`} });
         setPosts(res.data);
 		setLoading(false);
     	console.log("upload api data",res.data);

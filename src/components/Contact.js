@@ -17,7 +17,7 @@ class Contact extends React.Component {
     e.preventDefault();
     axios({
       method: "POST",
-      url:"http://slidertest321.herokuapp.com/contactus/",
+      url:"http://localhost:8000/contactus/",
       data:  this.state,
       headers:{'Authorization': `JWT ${localStorage.getItem('access')}`}
     }).then((response)=>{   

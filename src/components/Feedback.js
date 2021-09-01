@@ -17,7 +17,7 @@ class Feedback extends React.Component {
     e.preventDefault();
     axios({
       method: "POST",
-      url:"http://slidertest321.herokuapp.com/feedback/",
+      url:"http://localhost:8000/feedback/",
       data:  this.state,
       headers:{'Authorization': `JWT ${localStorage.getItem('access')}`}
     }).then((response)=>{

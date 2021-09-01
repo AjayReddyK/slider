@@ -9,7 +9,7 @@ SECRET_KEY = 'django-insecure-67jlo==j#c+e%-h_p@p-lh9#v6ik3t&^gwamwpy=+ai8amq-0@
 
 DEBUG = True
 
-ALLOWED_HOSTS = ['localhost:8000','http://slidertest321.herokuapp.com']
+ALLOWED_HOSTS = ['localhost:8000']
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'allauth.socialaccount.providers.google',
     'rest_framework.authtoken',
 ]
-SITE_ID = 6
+SITE_ID = 7
 
 CORS_ORIGIN_ALLOW_ALL = True
 
@@ -202,7 +202,7 @@ SOCIALACCOUNT_PROVIDERS = {
         ],
         'AUTH_PARAMS': {
             'access_type': 'online',
-            'redirect_uri': 'http://slidertest321.herokuapp.com'
+            'redirect_uri': 'http://localhost:8000'
         }
     }
 }

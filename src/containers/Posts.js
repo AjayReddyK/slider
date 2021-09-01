@@ -32,7 +32,7 @@ const Posts = ({posts,loading}) => {
     const handleDownload = () => {
         const downloadData = new FormData();
         downloadData.append("file_name","/documents/2.png");
-        const url = "http://slidertest321.herokuapp.com/download/";
+        const url = "http://localhost:8000/download/";
 
         axios.post(url,downloadData,{
             responseType:'blob',
