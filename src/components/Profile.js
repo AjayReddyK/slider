@@ -25,7 +25,7 @@ const Profile = () => {
 
         useEffect(() => {
             const fetchProfile = async () => {
-              const res = await axios.get('https://slidertest321.herokuapp.com/api/userdata', { headers: {'Authorization': `JWT ${localStorage.getItem('access')}`} });
+              const res = await axios.get('https://slidertest321.herokuapp.com/api/userdata/', { headers: {'Authorization': `JWT ${localStorage.getItem('access')}`} });
               setProfile(res.data);
               console.log("profile api data",res.data);
               console.log("profile const data",profile);

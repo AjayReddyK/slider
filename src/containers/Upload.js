@@ -70,7 +70,7 @@ const Upload = () => {
 		// fetching departments
 		useEffect(() => {
 			const fetchDepartments = async () => {
-			  const res = await axios.get('https://slidertest321.herokuapp.com/api/department');		  
+			  const res = await axios.get('https://slidertest321.herokuapp.com/api/department/');		  
 			  setDepartments(res.data);
 			  console.log("depts:",res.data);
 			};
@@ -85,7 +85,7 @@ const Upload = () => {
 		// fetching hashtags
 		useEffect(() => {
 			const fetchHashtags = async () => {
-			  const resp = await axios.get('https://slidertest321.herokuapp.com/api/category');
+			  const resp = await axios.get('https://slidertest321.herokuapp.com/api/category/');
 			  setHashtags(resp.data);
 			for (var key in hashtags) {
 				if (hashtags.hasOwnProperty(key)) {
@@ -166,7 +166,7 @@ const Upload = () => {
 		uploadData.append('hashtags',selectedCategory.join(","));
 		uploadData.append('name',filename);
 
-		const url = 'https://slidertest321.herokuapp.com/api/upload';
+		const url = 'https://slidertest321.herokuapp.com/api/upload/';
 		
 		axios.post(url, uploadData, {
 			headers: {
