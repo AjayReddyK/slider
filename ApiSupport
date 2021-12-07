@@ -1,0 +1,36 @@
+1. /api/upload/ - POST request to upload file
+	Parameters:
+		1. document - file
+		2. name -file name
+		3. hashtags - comma separated categories
+		4. department - comma seperated departments
+2. /api/files/ - POST method to get convenient files
+	Parameters:
+		1. page_factor- number of files displayed in webpage ,0 to get all the files
+		2. page_number- files of the respective page number
+		3. order_by - 
+					1. uploaded_at - to get files in ascending order of date uploaded
+					2. -uploaded_at - to get files in descending order 
+					3. name - to get files in alphabetical order 
+					4. -name - to get files in reverse alphabetical order
+3. /api/catergory/ - GET method to get all categorys in alphabetical order
+4. /api/department/ - GET method to get all departments in alphabetical order
+5. /api/getcategory/ - POST method to get files of a particular category
+	Parameters:
+		1. category - name of the category , enter valid name
+6. /api/getdepartment/ - POST method to get files of a particular department
+	Parameters:
+		1. department - name of department, enter valid name
+7. /api/userdata/-Get method to get profile data 
+		1. send in access token in the headers
+8. /api/uploadedfiles/ -Get method , send in access token
+9. /feedback/ - Post method to give feedback
+	parameters:-
+		1. message - send your feedback message
+		2. User must be logged in , so send access token in headers
+
+10. /contactus/ - same as feedback
+10. /auth/jwt/create/ - POST method to get jwt tokens
+	parameters:-
+		1. email- send email id
+		2. password - password
