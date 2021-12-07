@@ -26,7 +26,7 @@ const PostsApp = () => {
             fileData.append('order_by',"uploaded_at");
             setLoading(true);
 
-            const url = 'https://slidertest321.herokuapp.com/api/files/';
+            const url = 'https://slidertest321.herokuapp.com/api/files';
 
             axios.post(url, fileData, {
                 headers: {
