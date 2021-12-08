@@ -214,3 +214,4 @@ django_heroku.settings(locals())
 # IsAuthenticated
 # IsAdminUser
 # IsAuthenticatedOrReadOnly
+#justa comment
